@@ -5,7 +5,7 @@ const global = createGlobalStyle`
 * {
     outline: none;
     box-sizing: border-box;
-    color: white;
+    
 }
 
 /* Firefox */
