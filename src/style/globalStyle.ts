@@ -7,14 +7,7 @@ const global = createGlobalStyle`
     box-sizing: border-box;
     color: white;
 }
-#root{
-  background:linear-gradient(to bottom right,#513cef,#775ae7);
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-width: fit-content;
-}
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
