@@ -11,6 +11,7 @@ const Login = () => {
           <s.LoginButton>로그인</s.LoginButton>
           <s.LoginSignUp>
             <s.LoginAccount>계정이 없으신가요?</s.LoginAccount>
+
             <s.SignUp>회원가입 하기</s.SignUp>
           </s.LoginSignUp>
         </s.LoginSet>

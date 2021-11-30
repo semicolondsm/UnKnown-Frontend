@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import arrow from '../../assets/login/arrow.svg';
 import illustration from '../../assets/login/Login_Illustration.svg';
 
+
 export const LoginWrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -24,6 +25,7 @@ export const LoginBlackBox = styled.div`
   background-size: 569.6px 436.905px;
   background-position: right bottom;
   background-repeat: no-repeat;
+
 `;
 
 export const LoginSet = styled.div`
@@ -71,6 +73,7 @@ export const LoginButton = styled.button`
   background-size: 19.2px 16.8px;
   background-position: 97% 50%;
   transition: all 0.5s;
+
   &:hover {
     background-color: white;
     border-radius: 2px;
@@ -93,9 +96,10 @@ export const LoginAccount = styled.p`
   color: #707070;
 `;
 
+
 export const SignUp = styled.p`
   margin-left: 4px;
-  font-family: 'Noto Sans CJK KR';
+  font-family: "Noto Sans CJK KR";
   font-size: 14px;
   text-decoration: underline;
   font-weight: 500;
