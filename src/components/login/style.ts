@@ -1,10 +1,14 @@
 import styled from 'styled-components';
+import arrow from '../../assets/login/arrow.svg';
+import illustration from '../../assets/login/Login_Illustration.svg';
+
 
 export const LoginWrapper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
 `;
+
 export const LoginWhiteBox = styled.div`
   width: 58%;
   height: 100%;
@@ -17,6 +21,11 @@ export const LoginBlackBox = styled.div`
   width: 42%;
   height: 100%;
   background-color: black;
+  background-image: url(${illustration});
+  background-size: 569.6px 436.905px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
 `;
 
 export const LoginSet = styled.div`
@@ -37,7 +46,8 @@ export const LoginID = styled.input`
   height: 42px;
   border-radius: 1px;
   border-color: black;
-`
+`;
+
 export const LoginPassword = styled.input`
   padding: 0 10px;
   margin-top: 24px;
@@ -45,40 +55,47 @@ export const LoginPassword = styled.input`
   height: 42px;
   border-radius: 1px;
   border-color: black;
-`
+`;
 
 export const LoginButton = styled.button`
   margin-top: 64px;
   width: 100%;
   height: 42px;
-  background-color: black; 
+  background-color: black;
   border: 0;
   outline: 0;
   cursor: pointer;
-  font-family: "Noto Sans CJK KR";
+  font-family: 'Noto Sans CJK KR';
   font-size: 16px;
   color: white;
-  transition: all .5s;
+  background-image: url(${arrow});
+  background-repeat: no-repeat;
+  background-size: 19.2px 16.8px;
+  background-position: 97% 50%;
+  transition: all 0.5s;
+
   &:hover {
     background-color: white;
     border-radius: 2px;
     border: 2px solid black;
     color: black;
+    
   }
-`
+`;
 
 export const LoginSignUp = styled.div`
   width: 100%;
   display: flex;
   margin-top: 12px;
   justify-content: center;
-`
+`;
 
-export const Account = styled.p`
-  font-family: "Noto Sans CJK KR";
+export const LoginAccount = styled.p`
+  font-family: 'Noto Sans CJK KR';
   font-size: 14px;
   color: #707070;
-`
+`;
+
 
 export const SignUp = styled.p`
   margin-left: 4px;
@@ -87,4 +104,4 @@ export const SignUp = styled.p`
   text-decoration: underline;
   font-weight: 500;
   cursor: pointer;
-`
+`;
