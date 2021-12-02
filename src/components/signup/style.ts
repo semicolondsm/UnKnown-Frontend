@@ -1,6 +1,15 @@
 import styled from 'styled-components';
+import arrow from '../../assets/signup/arrow.svg';
+import arrowblack from '../../assets/signup/arrow_black.svg';
+import background from '../../assets/signup/background.svg';
+import illustration from '../../assets/signup/illustration.svg';
 
 export const SignupWrapper = styled.div`
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 250px;
+  align-items: center;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12,11 +21,16 @@ export const SignupImageBox = styled.div`
   height: 100%;
   min-width: 589.4px;
   background-color: black;
+  background-image: url(${illustration});
+  background-position: -130px 200px;
+  background-size: 120%;
+  background-repeat: no-repeat;
 `;
 
 export const SignupSet = styled.div`
+  margin-left: 123.2px;
   width: 493.6px;
-  background-color: black;
+  background-color: rgba (0, 0, 0, 1);
 `;
 
 export const SignupText = styled.p`
@@ -47,10 +61,19 @@ export const SignupButton = styled.button`
   font-size: 16px;
   cursor: pointer;
   margin-top: 44.8px;
+  background-image: url(${arrow});
+  background-repeat: no-repeat;
+  background-size: 19.2px 16.8px;
+  background-position: 97% 50%;
+  transition: all 0.5s;
   &:hover {
     background-color: white;
     border: 1px solid black;
     color: black;
+    background-image: url(${arrowblack});
+    background-repeat: no-repeat;
+    background-size: 19.2px 16.8px;
+    background-position: 97% 50%;
   }
 `;
 
