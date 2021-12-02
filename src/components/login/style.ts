@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import arrow from '../../assets/login/arrow.svg';
+import arrowblack from '../../assets/login/arrow_black.svg';
 import illustration from '../../assets/login/Login_Illustration.svg';
 
 export const LoginWrapper = styled.div`
@@ -76,7 +77,10 @@ export const LoginButton = styled.button`
     border-radius: 2px;
     border: 2px solid black;
     color: black;
-    
+    background-image: url(${arrowblack});
+    background-repeat: no-repeat;
+    background-size: 19.2px 16.8px;
+    background-position: 97% 50%;
   }
 `;
 
