@@ -3,7 +3,7 @@ import * as s from './style';
 const Signup = () => {
   return (
     <s.SignupWrapper>
-      <s.SignupImageBox></s.SignupImageBox>
+      
       <s.SignupSet>
         <s.SignupText>SIGN UP</s.SignupText>
         <s.SignupInput placeholder="아이디를 입력하세요"></s.SignupInput>
@@ -14,7 +14,7 @@ const Signup = () => {
           <s.SignupAccount>이미 계정이 있으신가요?</s.SignupAccount>
           <s.Login>로그인 하기</s.Login>
         </s.SignUpLogin>
-      </s.SignupSet>
+        </s.SignupSet>
     </s.SignupWrapper>
   );
 };

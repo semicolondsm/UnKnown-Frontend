@@ -5,32 +5,29 @@ import background from '../../assets/signup/background.svg';
 import illustration from '../../assets/signup/illustration.svg';
 
 export const SignupWrapper = styled.div`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 250px;
+  background-image: url(${background}),url(${illustration});
+  background-repeat: no-repeat,no-repeat;
+  background-position: right top, -130px 200px;
+  background-size: 250px,800px;
   align-items: center;
   width: 100%;
   height: 100vh;
   display: flex;
   background-color: black;
+  justify-content: center;
+  padding: 0 240px;
 `;
 
 export const SignupImageBox = styled.div`
   width: 589.4px;
   height: 100%;
-  min-width: 589.4px;
   background-color: black;
-  background-image: url(${illustration});
-  background-position: -130px 200px;
-  background-size: 120%;
-  background-repeat: no-repeat;
 `;
 
 export const SignupSet = styled.div`
   margin-left: 123.2px;
-  width: 493.6px;
-  background-color: rgba (0, 0, 0, 1);
+  min-width: 450px;
+  width: 450px;
 `;
 
 export const SignupText = styled.p`
@@ -61,6 +58,8 @@ export const SignupButton = styled.button`
   font-size: 16px;
   cursor: pointer;
   margin-top: 44.8px;
+  border: none;
+  border: 1px solid white;
   background-image: url(${arrow});
   background-repeat: no-repeat;
   background-size: 19.2px 16.8px;
