@@ -19,6 +19,7 @@ input[type=number] {
     html, body {
     width: 100%;
     height: 100%;
+    height: fit-content;
     }
     
     table {
