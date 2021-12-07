@@ -16,10 +16,12 @@ const Post = () => {
         text={''}
         language={'javascript'}
         showLineNumbers
-        startingLineNumber
+        startingLineNumber={1}
         theme={googlecode}
-        codeBlock
-        style={{ backgroundColor: '#e6e6e6' }}
+        codeBlock={true}
+        codeContainerStyle={{background:"#f2f2f2",color:"black"}}
+        customStyle={{background:"#f2f2f2"}}
+
       />
       <s.ShowFirstComment>
         <s.CommentImage></s.CommentImage>

@@ -2,17 +2,23 @@ import styled from 'styled-components';
 import { CopyBlock } from 'react-code-blocks';
 
 export const CodeWrapper = styled.div`
-  width: 1044px;
+  width: 100%;
   padding: 25px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin: 12px auto;
+  & span {
+    background: #f2f2f2 !important;
+  }
 `;
 
 export const ProfileBox = styled.div`
   display: flex;
   align-items: center;
+  padding-top: 40px;
+  border-top: 3px solid #dbdbdb;
 `;
 export const ProfileImage = styled.div`
+  
   height: 46px;
   width: 46px;
   background-color: #dcdcdc;
@@ -38,7 +44,7 @@ export const Description = styled.div`
   margin: 10px 0;
 `;
 export const CodeBlockWrapper = styled(CopyBlock)`
-  width: 500px;
+
 `;
 export const ShowFirstComment = styled.div`
   display: flex;
