@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import {ReactComponent as SearchIcon} from '../../assets/header/SearchIcon.svg';
+import { ReactComponent as SearchIcon } from '../../assets/header/SearchIcon.svg';
+import { ReactComponent as PenIcon } from '../../assets/header/pen.svg';
 
 export const HeaderWrapper = styled.div`
   height: 42px;
@@ -16,31 +17,38 @@ export const MenuWrapper = styled.div`
   justify-content: flex-end;
   min-width: fit-content;
 `;
-export const SerchBox = styled.div`
-  width: 30px;
-  height: 30px;
+export const SearchBox = styled.div`
+  width: 26.6px;
+  height: 26.6px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .5s;
-  :hover{
+  transition: all 0.5s;
+  :hover {
     background-color: #cccccc;
   }
-`
+`;
+
 export const Search = styled(SearchIcon)`
   width: 18px;
   height: 18px;
- 
-`
+`;
+
+export const Pen = styled(PenIcon)`
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+`;
 
 export const Post = styled.button`
   width: 123px;
-  height: 25px;
+  height: 26.6px;
   color: white;
   font-size: 10px;
-  border-radius: 12.5px;
+  font-weight: 600;
+  border-radius: 50px;
   background-color: black;
   border: none;
   margin: 0 19px;
@@ -54,4 +62,5 @@ export const AuthTitle = styled.p`
   font-weight: 600;
   cursor: pointer;
   width: fit-content;
+  margin-right: 18px;
 `;
